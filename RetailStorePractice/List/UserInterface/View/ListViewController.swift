@@ -5,7 +5,7 @@
 //  Created by Juan carlos De la parra on 01/03/21.
 //
 
-/*
+
 import Foundation
 import UIKit
 import RxSwift
@@ -75,4 +75,4 @@ class ListViewController : UIViewController, UITableViewDelegate {
     }
     
 }
-*/
+

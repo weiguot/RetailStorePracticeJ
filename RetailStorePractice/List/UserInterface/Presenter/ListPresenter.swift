@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 import RxSwift
-/*
+
 class ListPresenter {
     var listInteractor : ListInteractor?
     var userInterface : ListViewController?
@@ -34,4 +34,4 @@ class ListPresenter {
     
 
 }
-*/
+
