@@ -35,6 +35,10 @@ class ListCell: UITableViewCell {
             return
         }
 
+        guard let productImageName = product.imageName else {
+            return
+        }
+        
         nameLabel.text = productName
         priceLabel.text = productPrice.stringValue 
         productImageView.image = UIImage(named: product.imageName)
