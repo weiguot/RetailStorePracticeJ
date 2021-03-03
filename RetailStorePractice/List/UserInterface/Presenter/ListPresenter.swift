@@ -5,9 +5,18 @@
 //  Created by Juan carlos De la parra on 01/03/21.
 //
 
+//
+// ListPresenter.swift
+// RetailStorePractice
+//
+// Created by Juan carlos De la parra on 01/03/21.
+//
+
 import Foundation
 import UIKit
 import RxSwift
+import RxDataSources
+import RxCocoa
 
 class ListPresenter {
     var listInteractor : ListInteractor?
@@ -17,21 +26,22 @@ class ListPresenter {
     func updateView() {
         //Products
         listInteractor?.fetchProductsFromStore()
+        listInteractor?.products
             .asObservable().subscribe( {onNext in
                 guard let products = self.listInteractor?.products else {
                     return
                 }
-                if let sectioned = self.listInteractor?.sectionedData(data: products.value) {
+                if let sectioned =
+                    self.listInteractor?.sectionedData(data: products.value) {
                     self.updateUserInterface(withSectionedProducts: sectioned)
                 }
             })
-            .addDisposableTo(disposeBag)
+            .disposed(by: disposeBag)
     }
     
     func updateUserInterface(withSectionedProducts sectionedProducts: [SectionModel<NSNumber, Product>]) {
         userInterface?.showProducts(sectioned: sectionedProducts)
     }
     
-
+    
 }
-

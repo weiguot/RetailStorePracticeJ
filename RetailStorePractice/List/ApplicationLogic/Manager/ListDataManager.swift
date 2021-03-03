@@ -41,6 +41,7 @@ class ListDataManager {
                 newProduct.name = (dict["name"] as! String)
                 newProduct.categoryId = (dict["categoryId"] as! NSNumber)
                 newProduct.price = (dict["price"] as! NSNumber)
+        
                 newProduct.imageName = (dict["imageName"] as! String)
                 productsArray.append(newProduct)
             }

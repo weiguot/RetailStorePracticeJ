@@ -22,7 +22,7 @@ let ListViewControllerIdentifier = "ListViewController"
 
 class ListWireframe : NSObject {
     var listPresenter : ListPresenter?
-    var rootWireframe : RootWireframe?
+    var rootWireframe : RootWireFrame?
     var listViewController : ListViewController?
     
     func configuredListViewController() -> ListViewController {

@@ -27,6 +27,12 @@
 		339A604025EE4D7400C6BA13 /* RxDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = 339A603F25EE4D7400C6BA13 /* RxDataSources */; };
 		3A76CB1625EE8FAC00131250 /* RootWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A76CB1525EE8FAC00131250 /* RootWireFrame.swift */; };
 		3A76CB1B25EE918E00131250 /* ListViewWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A76CB1A25EE918E00131250 /* ListViewWireFrame.swift */; };
+		3A76CBC925EFD68100131250 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A76CBC825EFD68100131250 /* AppDependencies.swift */; };
+		3A76CBCA25EFD68100131250 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A76CBC825EFD68100131250 /* AppDependencies.swift */; };
+		3A76CBCB25EFD68100131250 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A76CBC825EFD68100131250 /* AppDependencies.swift */; };
+		3A76CC4325EFD7C800131250 /* RxDataSources in Resources */ = {isa = PBXBuildFile; fileRef = 3A76CC4225EFD7C800131250 /* RxDataSources */; };
+		3A76CC4425EFD7C800131250 /* RxDataSources in Resources */ = {isa = PBXBuildFile; fileRef = 3A76CC4225EFD7C800131250 /* RxDataSources */; };
+		3A76CC4525EFD7C800131250 /* RxDataSources in Resources */ = {isa = PBXBuildFile; fileRef = 3A76CC4225EFD7C800131250 /* RxDataSources */; };
 		612074BAFEF242062CF3B7B7 /* Pods_RetailStorePractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FF796D423862F336EE6BE37 /* Pods_RetailStorePractice.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +79,8 @@
 		339A602A25EE497B00C6BA13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A76CB1525EE8FAC00131250 /* RootWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootWireFrame.swift; sourceTree = "<group>"; };
 		3A76CB1A25EE918E00131250 /* ListViewWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewWireFrame.swift; sourceTree = "<group>"; };
+		3A76CBC825EFD68100131250 /* AppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
+		3A76CC4225EFD7C800131250 /* RxDataSources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RxDataSources; sourceTree = "<group>"; };
 		7FF796D423862F336EE6BE37 /* Pods_RetailStorePractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RetailStorePractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FB4D7AA7084B2CC39D259AE /* Pods-RetailStorePractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RetailStorePractice.debug.xcconfig"; path = "Target Support Files/Pods-RetailStorePractice/Pods-RetailStorePractice.debug.xcconfig"; sourceTree = "<group>"; };
 		CE1F09AA0CFA30F708B358A6 /* Pods-RetailStorePractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RetailStorePractice.release.xcconfig"; path = "Target Support Files/Pods-RetailStorePractice/Pods-RetailStorePractice.release.xcconfig"; sourceTree = "<group>"; };
@@ -142,6 +150,7 @@
 				339A5F9E25ED26EA00C6BA13 /* Assets.xcassets */,
 				339A5FA025ED26EA00C6BA13 /* LaunchScreen.storyboard */,
 				339A5FA325ED26EA00C6BA13 /* Info.plist */,
+				3A76CBC825EFD68100131250 /* AppDependencies.swift */,
 			);
 			path = RetailStorePractice;
 			sourceTree = "<group>";
@@ -211,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				339A5FF225ED6AE600C6BA13 /* Products.plist */,
+				3A76CC4225EFD7C800131250 /* RxDataSources */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -397,6 +407,7 @@
 				339A5FF325ED6AE600C6BA13 /* Products.plist in Resources */,
 				339A5FA225ED26EA00C6BA13 /* LaunchScreen.storyboard in Resources */,
 				339A5F9F25ED26EA00C6BA13 /* Assets.xcassets in Resources */,
+				3A76CC4325EFD7C800131250 /* RxDataSources in Resources */,
 				339A5F9A25ED26E800C6BA13 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,6 +416,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A76CC4425EFD7C800131250 /* RxDataSources in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +424,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A76CC4525EFD7C800131250 /* RxDataSources in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,6 +484,7 @@
 				339A5FCB25ED44B700C6BA13 /* ListDataManager.swift in Sources */,
 				3A76CB1625EE8FAC00131250 /* RootWireFrame.swift in Sources */,
 				339A5FFE25ED6F8300C6BA13 /* ListViewController.swift in Sources */,
+				3A76CBC925EFD68100131250 /* AppDependencies.swift in Sources */,
 				339A5F9325ED26E800C6BA13 /* AppDelegate.swift in Sources */,
 				339A5FC625ED444C00C6BA13 /* ListInteractor.swift in Sources */,
 				339A5F9D25ED26E800C6BA13 /* RetailStorePractice.xcdatamodeld in Sources */,
@@ -485,6 +499,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				339A601525EE47B000C6BA13 /* RetailStorePracticeTests.swift in Sources */,
+				3A76CBCA25EFD68100131250 /* AppDependencies.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,6 +508,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				339A602925EE497B00C6BA13 /* RetailStorePracticeUITests.swift in Sources */,
+				3A76CBCB25EFD68100131250 /* AppDependencies.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
