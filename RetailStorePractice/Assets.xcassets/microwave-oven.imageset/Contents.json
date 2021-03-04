@@ -1,23 +1,21 @@
 {
   "images" : [
     {
-      "filename" : "microwave-oven.jpg",
       "idiom" : "universal",
+      "filename" : "microwave-oven.jpg",
       "scale" : "1x"
     },
     {
-      "filename" : "microwave-oven@2x.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "microwave-oven@3x.jpg",
       "idiom" : "universal",
       "scale" : "3x"
     }
   ],
   "info" : {
-    "author" : "xcode",
-    "version" : 1
+    "version" : 1,
+    "author" : "xcode"
   }
 }
