@@ -1,11 +1,4 @@
 //
-//  AppDependencies.swift
-//  RetailStorePractice
-//
-//  Created by Field Employee on 3/3/21.
-//
-
-//
 // AppDependencies.swift
 // RetailStorePractice
 //
@@ -18,14 +11,14 @@ import UIKit
 
 class AppDependencies {
     
-    func installRootViewControllerIntoWindow(_ window: UIWindow?) {
+    func installRootViewControllerIntoWindow(_ window: UIWindow) {
         let listWireframe = AppDependencies.configureListViewDependencies()
-        listWireframe.presentListInterfaceFromWindow(window!)
+        listWireframe.presentListInterfaceFromWindow(window)
     }
     
     class func configureListViewDependencies() -> ListWireframe {
         let listWireframe = ListWireframe()
-        //let coreDataStore = CoreDataStore.sharedInstance
+        let coreDataStore = CoreDataStore.sharedInstance
         let rootWireframe = RootWireFrame()
         
         let listPresenter = ListPresenter()
@@ -33,11 +26,12 @@ class AppDependencies {
         let listInteractor = ListInteractor(dataManager: listDataManager)
         
         listPresenter.listInteractor = listInteractor
+        listPresenter.listWireframe = listWireframe
         
         listWireframe.listPresenter = listPresenter
         listWireframe.rootWireframe = rootWireframe
         
-        //listDataManager.coreDataStore = coreDataStore
+        listDataManager.coreDataStore = coreDataStore
         
         return listWireframe
     }

@@ -2,15 +2,7 @@
 //  ListViewWireFrame.swift
 //  RetailStorePractice
 //
-//  Created by Field Employee on 3/2/21.
-//
-
-//import Foundation
-
-// ListViewWireFrame.swift
-// RetailStorePractice
-//
-// Created by Juan carlos De la parra on 02/03/21.
+//  Created by Juan carlos De la parra on 02/03/21.
 //
 
 
@@ -33,6 +25,23 @@ class ListWireframe : NSObject {
         return viewController
     }
     
+    func navigate(toCart fromViewController: UIViewController) {
+        let cartViewController = configuredListViewController()
+        //cartViewController.screenType = .Cart
+        fromViewController.navigationController?.pushViewController(cartViewController, animated: true)
+    }
+    
+    func navigateToDetail(withProduct product: Product) {
+        let detailWireframe = DetailWireframe()
+        let detailManager = DetailManager()
+        let detailInteractor = DetailInteractor(detailManager: detailManager)
+        let detailPresenter = DetailPresenter()
+        detailPresenter.detailInteractor = detailInteractor
+        detailPresenter.detailWireframe = detailWireframe
+        detailWireframe.detailPresenter = detailPresenter
+        detailWireframe.presentDetailInterface(fromViewController: listViewController!, withProduct: product)
+    }
+    
     func presentListInterfaceFromWindow(_ window: UIWindow) {
         let viewController = configuredListViewController()
         rootWireframe?.showRootViewController(viewController, inWindow: window)
@@ -50,3 +59,4 @@ class ListWireframe : NSObject {
     }
     
 }
+

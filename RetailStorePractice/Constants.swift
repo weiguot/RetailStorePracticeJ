@@ -19,3 +19,17 @@ enum Category : Int {
         }
     }
 }
+
+//changed
+enum ScreenType {
+    case List, Cart
+    
+    func title() -> String {
+        switch self {
+        case .List:
+            return "Products"
+        default:
+            return "Cart"
+        }
+    }
+}
