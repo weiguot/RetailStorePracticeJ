@@ -41,6 +41,7 @@ class DetailWireframe {
 
     func detailViewControllerFromStoryboard() -> DetailViewController {
         let storyboard = mainStoryboard()
+        print(DetailViewController())
         let viewController = storyboard.instantiateViewController(withIdentifier: DetailViewControllerIdentifier) as! DetailViewController
         return viewController
     }

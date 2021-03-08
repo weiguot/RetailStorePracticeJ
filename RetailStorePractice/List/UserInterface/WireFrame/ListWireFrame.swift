@@ -39,6 +39,7 @@ class ListWireframe : NSObject {
         detailPresenter.detailInteractor = detailInteractor
         detailPresenter.detailWireframe = detailWireframe
         detailWireframe.detailPresenter = detailPresenter
+        print(product)
         detailWireframe.presentDetailInterface(fromViewController: listViewController!, withProduct: product)
     }
     
