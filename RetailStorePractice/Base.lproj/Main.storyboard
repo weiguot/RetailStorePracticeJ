@@ -98,7 +98,7 @@
         <!--Detail View Controller-->
         <scene sceneID="SId-pa-Lil">
             <objects>
-                <viewController storyboardIdentifier="DetailViewController" id="fQV-ee-Pj1" customClass="DetailViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailViewController" id="fQV-ee-Pj1" customClass="DetailViewController" customModule="RetailStorePractice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nnU-7f-YHS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

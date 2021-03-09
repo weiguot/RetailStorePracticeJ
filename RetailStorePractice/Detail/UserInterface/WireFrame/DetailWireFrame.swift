@@ -19,6 +19,7 @@ class DetailWireframe {
         newViewController.eventHandler = detailPresenter
         newViewController.product = product
         detailPresenter?.userInterface = newViewController
+        print(newViewController)
         viewController.navigationController?.pushViewController(newViewController, animated: true)
         
         presentedViewController = newViewController
